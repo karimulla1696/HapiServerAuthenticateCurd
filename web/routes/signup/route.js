@@ -3,7 +3,6 @@ const validator = require('../../middleware');
 const lanValidator = require('../../middleware/authValidation');
 const i18n = require('../../../locales/index');
 
-// const i18n = require('hapi-i18n');
 
 module.exports = {
     method: 'POST',
@@ -19,7 +18,5 @@ module.exports = {
             failAction: validator.errorValidator,
         },
         handler: signupHandler.handler,
-
-
     },
 };
