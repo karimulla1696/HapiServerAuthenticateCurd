@@ -1,6 +1,6 @@
 const loginHandler = require('./login');
 const validator = require('../../middleware');
-const lanValidatore = require('../../middleware/authValidation');
+const lanValidator = require('../../middleware/authValidation');
 const i18n = require('../../../locales/index');
 
 
@@ -16,7 +16,7 @@ module.exports = {
         response: loginHandler.response,
         validate: {
             payload: loginHandler.payload,
-            headers: lanValidatore.languageValidator,
+            headers: lanValidator.languageValidator,
             failAction: validator.errorValidator,
         },
     },
