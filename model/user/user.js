@@ -2,6 +2,7 @@ const db = require('../../library/mongodb');
 require('dotenv').config();
 
 const collectionName = process.env.COLLECTION_NAME;
+
 const deleteOneUser = async (condition) => await db.get()
         .collection(collectionName)
         .deleteOne(condition);
