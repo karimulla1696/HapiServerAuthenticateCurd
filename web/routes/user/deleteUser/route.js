@@ -17,7 +17,6 @@ module.exports = {
         validate: {
             headers: validate.validateJwtHeader,
             failAction: validator.errorValidator,
-
         },
 
     },
