@@ -1,0 +1,39 @@
+{
+  "500": "Internal server error",
+  "406": "user with given emailId does not exist",
+  "update": {
+    "200": "user's details updated successfully",
+    "409": "You have entered the same city name"
+  },
+  "login": {
+    "404": "user with given emailId or mobile does not exist",
+    "200": "login successfully"
+  },
+  "password": {
+    "404": "password you entered is incorrect"
+  },
+  "signup": {
+    "email": "user with given emailId already exist",
+    "mobile": "user with given mobile already exist",
+    "200": "User added successfully"
+  },
+  "delete": {
+    "200": "user deleted successfully",
+    "404": "user not found"
+  },
+  "apiDescription": {
+    "login": "This API is used to login",
+    "signup": "This API is used to signup",
+    "deleteUser": "This API is used to delete user ",
+    "getUser": "This API is used to get user details",
+    "updateUser": "This API is used to update a user details"
+  },
+  "apiNotes": {
+    "login": "This API is used to login",
+    "signup": "This API is used to signup",
+    "deleteUser": "This API is used to delete user ",
+    "getUser": "This API is used to get user details",
+    "updateUser": "This API is used to update a user details"
+  }
+
+}
