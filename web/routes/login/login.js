@@ -19,8 +19,10 @@ const handler = async(request, h) => {
         if (!passwordCheck) {
             return h.response({ message: request.i18n.__('password')['404'] });
         }
+
         const secretKey = process.env.SECRET_KEY;
         const token = jwt.sign({ _id: userData._id, isAdmin: userData.isAdmin }, secretKey);
+
         return h.response({
             message: request.i18n.__('login')['200'],
             data: {
