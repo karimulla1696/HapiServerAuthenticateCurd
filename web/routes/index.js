@@ -1,6 +1,8 @@
 const signup = require('./signup');
 const login = require('./login');
 const user = require('./user');
+const homepage = require('./homePage');
 
-const allRoutes = [].concat(signup, login, user);
+console.log("-----")
+const allRoutes = [].concat(signup, login, user, homepage);
 module.exports = allRoutes;
