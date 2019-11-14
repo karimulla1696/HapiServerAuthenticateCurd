@@ -7,7 +7,7 @@ module.exports = {
     options: {
         description: i18n.__('apiDescription')['.updateUser'],
         notes: i18n.__('apiNotes')['.updateUser'],
-        tags: ['api', 'patchhomepage'],
+        tags: ['api', 'home'],
         handler: patch.handler,
         response: patch.response,
         validate: {

@@ -11,7 +11,16 @@ const hostName = process.env.HOST;
 const server = new Hapi.server({
     port: portNumber,
     host: hostName,
+    routes: {
+        cors: {
+            origin: ['*'],
+            additionalHeaders: ['lan', 'cache-control', 'x-requested-with', 'authorization', 'refToken', 'token', 'Access-Control-Allow-Origin']
+            // additionalHeaders: ['lan']
+        }
+    }
 });
+
+
 
 exports.init = async() => {
     await server.register([{
